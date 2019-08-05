@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<title>Formulaire</title>
+</head>
+<body>
+	<h1>Formulaire avec CRUD en JavaScript</h1>
+	<table class="fonts">
+		<tr>
+			<td>
+				<form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+					<div>
+					<label>Nom Complet</label>
+					<input type="text" name="NomComplet" id="NomComplet">
+					</div>
+					<div>
+						<label>Courriel</label>
+						<input type="text" name="Courriel" id="Courriel">
+					</div>
+					<div>
+						<label>Telephone</label>
+						<input type="text" name="Telephone" id="Telephone">
+					</div>
+					<div>
+						<label>Ville</label>
+						<input type="text" name="Ville" id="Ville">
+					</div>
+					<div class="form-action-buttons">
+					<input type="submit" value="submit">
+					</div>
+				</form>
+			</td>
+			<td>
+				<!-- table to list all records -->
+				<table class="list" id="clientList">
+					<thead>
+						<tr>
+							<th>Nom Complet</th>
+							<th>Courriel</th>
+							<th>Telephone</th>
+							<th>Ville</th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						
+					</tbody>
+				</table>
+
+			</td>
+		</tr>
+	</table>
+	<script src="script.js"></script>	
+	
+</body>
+</html>
